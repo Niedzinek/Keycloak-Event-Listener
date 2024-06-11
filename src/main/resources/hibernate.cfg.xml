@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Ustawienia dla źródła danych -->
+        <property name="hibernate.connection.url">jdbc:mysql://ziemniakidb:3306/ziemniakidb</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+
+        <!-- Inne ustawienia Hibernate -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Mapowanie klas encji -->
+        <!-- Tutaj możesz dodać mapowanie klas encji -->
+        <mapping class="org.example.Customer"/>
+    </session-factory>
+</hibernate-configuration>
